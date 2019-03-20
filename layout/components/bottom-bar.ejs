@@ -33,10 +33,7 @@
   if (is_post() || page.type === 'about' || page.type === 'friends') {
     catalog = true;
     
-    if(theme.leancloud.comment) {
-      comments.enable = true;
-      comments.link = '#site-comment';
-    } else if (theme.disqus.enable) {
+    if (theme.disqus.enable) {
       comments.enable = true;
       comments.link = '#disqus_thread';
     }
@@ -56,16 +53,13 @@
     <a href="javascript:void(0);" data-enable="<%- catalog %>" id="site-toc-show-btn">
       <i class="fa fa-bars"></i>
     </a>
-    <% if(theme.leancloud.comment || theme.disqus.enable) { %>
+    <% if(theme.disqus.enable) { %>
       <a href="<%- comments.enable ? comments.link : 'javascript:void(0);' %>" data-enable="<%- comments.enable %>">
         <i class="fa fa-commenting"></i>
       </a>
     <% } %>
     <a href="javascript:void(0);" id="site-toggle-share-btn">
       <i class="fa fa-share-alt"></i>
-    </a>
-    <a href="javascript:void(0);" id="site-reward">
-      <i class="fa fa-thumbs-up"></i>
     </a>
     <a href="javascript:void(0);" id="back-top-btn">
       <i class="fa fa-chevron-up"></i>
