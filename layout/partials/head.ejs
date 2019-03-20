@@ -59,11 +59,11 @@
   <script src="//cdn.jsdelivr.net/npm/leancloud-storage@3.11.1/dist/av-min.js" async></script>
 
   <% if(theme.mathjax) { %>
-    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML" async></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/mathjax@2.7.5/MathJax.js?config=TeX-MML-AM_CHTML" async></script>
   <% } %>
 
   <% if(theme.leancloud.comment) { %>
-    <script src="//unpkg.com/valine/dist/Valine.min.js" async></script>
+    <script src="//cdn.jsdelivr.net/npm/valine@1.3.4/dist/Valine.min.js" async></script>
   <% } %>
 
   <% if(theme.busuanzi) { %>
@@ -79,7 +79,7 @@
     <link rel="apple-touch-icon" href="<%- url_for(theme.favicon.touch_icon) %>">
   <% } %>
 
-  <link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="//cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
   <%- css(['/css/index.css', '/styles/components/highlight/highlight.css']) %>
 
