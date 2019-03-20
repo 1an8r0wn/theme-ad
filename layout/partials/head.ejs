@@ -72,7 +72,7 @@
 
   <%- partial('components/config') %>
 
-  <%- js(['/vendor/sha256.min.js', '/js/auth.js', '/js/index.js', '/vendor/qrcode.min.js']) %>
+  <%- js(['//cdn.jsdelivr.net/combine/gh/1an8r0wn/assetes4repositories/theme-ad-kai/js/sha256.min.js,gh/1an8r0wn/assetes4repositories/theme-ad-kai/js/auth.js,gh/1an8r0wn/assetes4repositories/theme-ad-kai/js/index.js,gh/1an8r0wn/assetes4repositories/theme-ad-kai/js/qrcode.min.js']) %>
 
   <% if (theme.favicon){ %>
     <link rel="icon" href="<%- url_for(theme.favicon.icon) %>">
@@ -81,7 +81,7 @@
 
   <link href="//cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
-  <%- css(['/css/index.css', '/styles/components/highlight/highlight.css']) %>
+  <%- css(['//cdn.jsdelivr.net/combine/gh/1an8r0wn/assetes4repositories/theme-ad-kai/css/index.css,gh/1an8r0wn/assetes4repositories/theme-ad-kai/css/highlight.css']) %>
 
   <% if (theme.custom_styles){ %>
     <%- css(theme.custom_styles) %>
